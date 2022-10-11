@@ -114,7 +114,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className='py-6 text-sm text-center text-gray-400'>
-                © 2022 Smart Home Inc. All rights reserved.
+                © 2022 Quiz Buddy LLC || All rights reserved.
             </div>
         </footer>
     )

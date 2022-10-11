@@ -4,7 +4,7 @@ import { Link, NavLink } from 'react-router-dom';
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
     return (
-        <div className='px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8'>
+        <nav className='px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8'>
             <div className='relative flex items-center justify-between'>
                 <Link
                     to='/'
@@ -30,7 +30,11 @@ const Navbar = () => {
                             to='/topics'
                             aria-label='Topics'
                             title='Topics'
-                            className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
+                            className={({ isActive }) =>
+                                isActive
+                                    ? 'font-medium tracking-wide text-blue-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
+                                    : 'font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
+                            }
                         >
                             Topics
                         </NavLink>
@@ -40,7 +44,11 @@ const Navbar = () => {
                             to='/statics'
                             aria-label='Statics'
                             title='Statics'
-                            className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
+                            className={({ isActive }) =>
+                                isActive
+                                    ? 'font-medium tracking-wide text-blue-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
+                                    : 'font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
+                            }
                         >
                             Statics
                         </NavLink>
@@ -50,9 +58,27 @@ const Navbar = () => {
                             to='/blog'
                             aria-label='Blog'
                             title='Blog'
-                            className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
+                            className={({ isActive }) =>
+                                isActive
+                                    ? 'font-medium tracking-wide text-blue-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
+                                    : 'font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
+                            }
                         >
                             Blog
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink
+                            to='/about'
+                            aria-label='About'
+                            title='About'
+                            className={({ isActive }) =>
+                                isActive
+                                    ? 'font-medium tracking-wide text-blue-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
+                                    : 'font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
+                            }
+                        >
+                            About
                         </NavLink>
                     </li>
                 </ul>
@@ -125,7 +151,11 @@ const Navbar = () => {
                                                 to='/topics'
                                                 aria-label='Topics'
                                                 title='Topics'
-                                                className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
+                                                className={({ isActive }) =>
+                                                    isActive
+                                                        ? 'font-medium tracking-wide text-blue-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
+                                                        : 'font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
+                                                }
                                             >
                                                 Topics
                                             </NavLink>
@@ -135,7 +165,11 @@ const Navbar = () => {
                                                 to='/statics'
                                                 aria-label='Statics'
                                                 title='Statics'
-                                                className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
+                                                className={({ isActive }) =>
+                                                    isActive
+                                                        ? 'font-medium tracking-wide text-blue-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
+                                                        : 'font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
+                                                }
                                             >
                                                 Statics
                                             </NavLink>
@@ -145,7 +179,11 @@ const Navbar = () => {
                                                 to='/blog'
                                                 aria-label='Blog'
                                                 title='Blog'
-                                                className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
+                                                className={({ isActive }) =>
+                                                    isActive
+                                                        ? 'font-medium tracking-wide text-blue-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
+                                                        : 'font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
+                                                }
                                             >
                                                 Blog
                                             </NavLink>
@@ -157,7 +195,7 @@ const Navbar = () => {
                     )}
                 </div>
             </div>
-        </div>
+        </nav>
     )
 };
 

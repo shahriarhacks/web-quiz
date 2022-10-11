@@ -1,9 +1,9 @@
 import React from 'react';
-
+import Header from '../components/Header'
 const Topics = () => {
     return (
         <div>
-
+            <Header />
         </div>
     );
 };
