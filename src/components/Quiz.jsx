@@ -6,7 +6,7 @@ const Quiz = ({ quiz }) => {
     return (
         <div className='bg-slate-300 p-6 rounded shadow-lg'>
             <img
-                className='object-cover w-full h-56 mb-6 rounded shadow-lg md:h-64 xl:h-80'
+                className='object-cover w-full h-56 mb-6 rounded shadow-lg md:h-64 '
                 src={logo}
                 alt='Logo'
             />
@@ -15,9 +15,9 @@ const Quiz = ({ quiz }) => {
             <Link to={`/quiz/${id}`}>
                 <button
                     type='button'
-                    className='px-8 block w-full mt-4 py-3 font-semibold rounded-full bg-cyan-200 text-gray-800 hover:bg-cyan-400'
+                    className='px-8 block w-full mt-4 py-3 font-semibold rounded-full bg-cyan-300 text-gray-800 hover:bg-cyan-500'
                 >
-                    Get Started
+                    Get Start
                 </button>
             </Link>
         </div>
