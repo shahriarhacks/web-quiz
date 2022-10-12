@@ -18,7 +18,7 @@ const Footer = () => {
                             </svg>
                         </div>
                         <span className='self-center text-2xl font-semibold'>
-                            Quiz Buddy
+                            Web Quiz
                         </span>
                     </Link>
                 </div>
@@ -114,7 +114,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className='py-6 text-sm text-center text-gray-400'>
-                © 2022 Quiz Buddy LLC || All rights reserved.
+                © 2022 Web Quiz Ltd. All rights reserved.
             </div>
         </footer>
     )

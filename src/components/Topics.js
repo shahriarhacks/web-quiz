@@ -2,8 +2,6 @@ import React from 'react';
 import { useLoaderData } from 'react-router-dom';
 import Header from './Header'
 import Quiz from './Quiz';
-import Lottie from 'lottie-react';
-import go from '../assets/go.json'
 
 const Topics = () => {
     const quiz = useLoaderData();
@@ -18,9 +16,6 @@ const Topics = () => {
                         allQuiz.map(quiz => <Quiz key={quiz.id} quiz={quiz} />)
                     }
                 </div>
-            </div>
-            <div className='w-full'>
-                <Lottie animationData={go} loop={true} />
             </div>
         </div>
     );

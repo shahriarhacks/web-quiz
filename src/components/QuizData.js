@@ -9,7 +9,7 @@ const QuizData = () => {
     const { name, logo, questions } = (quizData?.data);
     return (
         <main>
-            <div className="bg-gray-200 grid grid-cols-1 lg:grid-cols-2">
+            <div className="bg-gray-400 grid grid-cols-1 lg:grid-cols-2">
                 <div className="w-full">
                     <Lottie animationData={quizBump} loop={true} />
                 </div>

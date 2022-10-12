@@ -18,10 +18,10 @@ const Questions = ({ qs }) => {
     }
     return (
         <div>
-            <div className='bg-gray-100 p-6 rounded shadow-lg'>
+            <div className='bg-gray-300 p-6 rounded shadow-lg'>
                 <h1 className='text-xl text-center'>{question}</h1>
                 <button onClick={() => handelClickButton(qs)}>
-                    <EyeIcon className="h-6 w-6 my-5 text-gray-500" />
+                    <EyeIcon className="h-6 w-6 my-5 text-indigo-700" />
                 </button>
                 <div className='grid grid-cols-1 gap-5 my-5 lg:grid-cols-2 mx-auto'>
                     {
