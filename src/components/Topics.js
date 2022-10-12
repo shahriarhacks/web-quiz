@@ -1,6 +1,6 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
-import Header from '../components/Header'
+import Header from './Header'
 import Quiz from './Quiz';
 import Lottie from 'lottie-react';
 import go from '../assets/go.json'
