@@ -25,7 +25,7 @@ const Questions = ({ qs }) => {
                 </button>
                 <div className='grid grid-cols-1 gap-5 my-5 lg:grid-cols-2 mx-auto'>
                     {
-                        options.map((option, idx) => <Options key={idx} answer={answer} id={idx} option={option} />)
+                        options.map((option, idx) => <Options key={idx} answer={answer} option={option} />)
                     }
                 </div>
             </div>
